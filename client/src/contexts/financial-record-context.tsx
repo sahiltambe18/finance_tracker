@@ -89,7 +89,7 @@ export const FinancialRecordsProvider = ({
             setRecords( (prev)=>{
                 return [...prev , record]
             })
-            const newRecord = await response.json();
+             await response.json();
             
         } catch (err) {
             console.error("Failed to add new record", err);
